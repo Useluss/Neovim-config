@@ -1,0 +1,29 @@
+return require('packer').startup(function(use)
+    use 'wbthomason/packer.nvim'
+    use 'ellisonleao/gruvbox.nvim'
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+    }
+    use 'rcarriga/nvim-notify'
+    use 'nvim-lualine/lualine.nvim'
+    use 'romgrk/barbar.nvim'
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use 'p00f/nvim-ts-rainbow'
+    use 'windwp/nvim-autopairs'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
+    -- LSP plugins
+    use 'neovim/nvim-lspconfig'
+    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+    use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+    use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use 'onsails/lspkind-nvim'
+end)
