@@ -40,6 +40,10 @@ cmp.setup {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
     },
+    
+    experimental = {
+        ghost_text = true,
+    }
 }
 
 local lspkind = require('lspkind')
