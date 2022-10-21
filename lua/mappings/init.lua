@@ -11,6 +11,10 @@ map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>f', ':NvimTreeFocus<CR>', opts)
 
+-- Dap
+map('n', '<A-b>', ':lua require("dap").toggle_breakpoint()<CR>', opts)
+map('n', '<A-B>', ':lua require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))<CR>', opts)
+
 -- Barbar
 -- Move to previous/next
 map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
