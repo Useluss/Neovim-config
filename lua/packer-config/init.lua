@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
             codewindow.apply_default_keybinds()
         end,
     }
+    use 'terrortylor/nvim-comment'
 
     -- LSP plugins
     use 'neovim/nvim-lspconfig'
