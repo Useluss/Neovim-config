@@ -19,6 +19,14 @@ return require('packer').startup(function(use)
     }
     use 'mfussenegger/nvim-dap'
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use {
+        'gorbit99/codewindow.nvim',
+        config = function()
+            local codewindow = require('codewindow')
+            codewindow.setup()
+            codewindow.apply_default_keybinds()
+        end,
+    }
 
     -- LSP plugins
     use 'neovim/nvim-lspconfig'

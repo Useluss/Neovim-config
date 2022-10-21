@@ -94,6 +94,12 @@ _G.packer_plugins = {
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codewindow.nvim"] = {
+    config = { "\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0" },
+    loaded = true,
+    path = "/home/useluss/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
+    url = "https://github.com/gorbit99/codewindow.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -182,6 +188,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: codewindow.nvim
+time([[Config for codewindow.nvim]], true)
+try_loadstring("\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0", "config", "codewindow.nvim")
+time([[Config for codewindow.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
