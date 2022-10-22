@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
     use 'terrortylor/nvim-comment'
 
     -- LSP plugins
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
