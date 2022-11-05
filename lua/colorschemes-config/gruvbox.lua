@@ -9,7 +9,7 @@ require("gruvbox").setup({
   invert_tabline = false,
   invert_intend_guides = false,
   inverse = true,
-  contrast = "soft",
+  contrast = "",
   palette_overrides = {},
   overrides = {},
   dim_inactive = false,

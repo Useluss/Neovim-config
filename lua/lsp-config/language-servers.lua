@@ -19,12 +19,32 @@ local lsp_flags = {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
+local rust_opts = {
+    tools = {
+        runnables = {
+            use_telescope = true,
+        },
+        inlay_hints = {
+            auto = true,
+            show_paramater_hints = false,
+            paramater_hints_prefix = "",
+            other_hints_prefix = "",
+        },
+    },
+}
+
 nvim_lsp['rust_analyzer'].setup {
+    require("rust-tools").setup(rust_opts),
     flags = lsp_flags,
     capabilities = capabilities,
     settings = {
         ["rust-analyzer"] = {}
     }
+}
+
+nvim_lsp['marksman'].setup {
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 nvim_lsp['sumneko_lua'].setup {
