@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
     }
     use 'terrortylor/nvim-comment'
     use 'simrat39/rust-tools.nvim'
+    use 'iamcco/markdown-preview.nvim'
 
     -- LSP plugins
     use 'williamboman/mason.nvim'
