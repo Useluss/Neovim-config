@@ -42,6 +42,11 @@ nvim_lsp['rust_analyzer'].setup {
     }
 }
 
+nvim_lsp['lemminx'].setup {
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+
 nvim_lsp['marksman'].setup {
     flags = lsp_flags,
     capabilities = capabilities,
