@@ -11,6 +11,14 @@ mason.setup({
 })
 require("mason-lspconfig").setup()
 
+local ih = require("inlay-hints").setup({
+  only_current_line = false,
+
+  eol = {
+    right_align = true,
+  }
+})
+
 local lsp_flags = {
     debounce_text_changes = 150,
 }
@@ -21,6 +29,9 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 local rust_opts = {
     tools = {
+        on_initialized = function ()
+            ih.set_all()
+        end,
         runnables = {
             use_telescope = true,
         },

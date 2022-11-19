@@ -4,6 +4,7 @@ local formatting = null_ls.builtins.formatting
 
 local sources = {
     formatting.stylua,
+    formatting.rustfmt
 }
 
 null_ls.setup({

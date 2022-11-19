@@ -105,6 +105,11 @@ _G.packer_plugins = {
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["inlay-hints.nvim"] = {
+    loaded = true,
+    path = "/home/useluss/.local/share/nvim/site/pack/packer/start/inlay-hints.nvim",
+    url = "https://github.com/simrat39/inlay-hints.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
