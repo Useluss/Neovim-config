@@ -37,7 +37,7 @@ local rust_opts = {
         },
         inlay_hints = {
             auto = true,
-            show_paramater_hints = false,
+            show_paramater_hints = true,
             paramater_hints_prefix = "",
             other_hints_prefix = "",
         },
