@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
         end,
     }
     use 'terrortylor/nvim-comment'
+    use 'ron-rs/ron.vim'
     use 'simrat39/rust-tools.nvim'
     use 'simrat39/inlay-hints.nvim'
     use 'iamcco/markdown-preview.nvim'

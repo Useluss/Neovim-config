@@ -205,6 +205,11 @@ _G.packer_plugins = {
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["ron.vim"] = {
+    loaded = true,
+    path = "/home/useluss/.local/share/nvim/site/pack/packer/start/ron.vim",
+    url = "https://github.com/ron-rs/ron.vim"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/home/useluss/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
