@@ -1,4 +1,3 @@
-require('settings')
 require('mappings')
 require('colorschemes-config.gruvbox')
 require('packer-config')

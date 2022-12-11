@@ -1,6 +1,5 @@
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'ellisonleao/gruvbox.nvim'
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -32,6 +31,10 @@ return require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'simrat39/inlay-hints.nvim'
     use 'iamcco/markdown-preview.nvim'
+
+    -- Colorschemes
+    use 'ellisonleao/gruvbox.nvim'
+    use 'folke/tokyonight.nvim'
 
     -- LSP plugins
     use 'williamboman/mason.nvim'
