@@ -31,6 +31,12 @@ return require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'simrat39/inlay-hints.nvim'
     use 'iamcco/markdown-preview.nvim'
+    use {
+	    'goolord/alpha-nvim',
+	    config = function ()
+	    	require('alpha').setup(require('alpha.themes.dashboard').config)
+	    end
+    }
 
     -- Colorschemes
     use 'ellisonleao/gruvbox.nvim'

@@ -1,4 +1,5 @@
 require('mappings')
+require('settings')
 require('colorschemes-config.gruvbox')
 require('packer-config')
 require('nvim-tree-config')
